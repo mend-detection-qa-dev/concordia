@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from setuptools import find_packages, setup
 
-VERSION = __import__("importer").get_version()
+VERSION = "1.0.0"
 INSTALL_REQUIREMENTS = ["boto3", "celery", "requests", "Django>=2.1.5", "Pillow"]
 DESCRIPTION = "Download collections of images from loc.gov"
 CLASSIFIERS = """
@@ -12,7 +12,7 @@ Programming Language :: Python
 Programming Language :: Python :: 3.12
 """.splitlines()
 
-with open("README.rst", "r") as f:
+with open("README.md", "r") as f:
     LONG_DESCRIPTION = f.read()
 
 

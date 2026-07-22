@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from setuptools import find_packages, setup
 
-VERSION = __import__("concordia").get_version()
+VERSION = "1.0.0"
 INSTALL_REQUIREMENTS = ["boto3", "Django>=4.2"]
 SCRIPTS = ["manage.py"]
 DESCRIPTION = "Transcription crowdsourcing"
@@ -26,9 +26,4 @@ setup(
     scripts=SCRIPTS,
     install_requires=INSTALL_REQUIREMENTS,
     classifiers=CLASSIFIERS,
-    use_scm_version={
-        "write_to": "version.txt",
-        "tag_regex": r"^(?P<prefix>v)?(?P<version>[^\+]+)(?P<suffix>.*)?$",
-    },
-    setup_requires=["setuptools_scm"],
 )
